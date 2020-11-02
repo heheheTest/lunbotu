@@ -1,0 +1,96 @@
+@font-face {
+    /*1. 这个字体名称要注意 icomoon*/
+    font-family: 'icomoon';
+    /*2. 一定要注意路径的问题*/
+    src: url('../fonts/icomoon.eot?7kkyc2');
+    src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?7kkyc2') format('truetype'), url('../fonts/icomoon.woff?7kkyc2') format('woff'), url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+li,
+ul,
+ol,
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.box {
+    position: relative;
+    height: 665px;
+    width: 500px;
+    background-color: aqua;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+ul {
+    height: 665px;
+    width: 1000%;
+    position: absolute;
+}
+
+ul li {
+    float: left;
+}
+
+.btn_r,
+.btn_l {
+    font-family: 'icomoon';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 60px;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn_r:hover {
+    color: #fff;
+}
+
+.btn_l:hover {
+    color: #fff;
+}
+
+.btn_l {
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.btn_r {
+    right: 0;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+ol {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    padding: 5px 0;
+    transform: translateX(-50%);
+}
+
+ol li {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    float: left;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.current {
+    background-color: #f40;
+}
